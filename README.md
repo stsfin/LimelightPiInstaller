@@ -5,7 +5,7 @@ This is a fork of the Limelight RetroPie+Emulation station installer script for 
 
 LimelightInstaller.sh - script is used to install and configure limelight with retropie 
 
-limelightReconfig.sh - script is used to reconfigure ip and keymap settings for limelight without installing stuff again
+Limelightconfig.sh - script is used to reconfigure ip and keymap settings for limelight without installing stuff again
 
 Howto use:
 
