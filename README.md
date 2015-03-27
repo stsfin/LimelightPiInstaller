@@ -3,17 +3,17 @@ Generic RasperryPI installer and configuration script for Limelight
 
 This is a fork of the Limelight RetroPie+Emulation station installer script for generic install on any Raspian based Pi-system
 
-limelightRetroInstall.sh - script is used to install and configure limelight with retropie 
+LimelightInstaller.sh - script is used to install and configure limelight with retropie 
 
 limelightReconfig.sh - script is used to reconfigure ip and keymap settings for limelight without installing stuff again
 
 Howto use:
 
-just drop the limelightRetroInstall.sh in to your home directory
+just drop the LimelightInstaller.sh in to your home directory
 
-chmod +x limelightRetroInstall.sh
+chmod +x LimelightInstaller.sh
 
-./limelightRetroInstall.sh
+./LimelightInstaller.sh
 
 <hr>
 
