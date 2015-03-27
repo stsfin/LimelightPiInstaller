@@ -1,5 +1,9 @@
 #!/bin/bash
 
+mkdir limelight
+
+cd limelight
+
 read -p "Press anykey to start Java8 install, input sudo credentials when asked `echo $'\n> '`" -n1 -s
 
 sudo apt-get update && sudo apt-get install oracle-java8-jdk && sudo apt-get install input-utils
