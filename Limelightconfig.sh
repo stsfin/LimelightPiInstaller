@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir ~/limelight
-
 cd ~/limelight
 
 echo -e "\nDiscovering GeForce PC:s, when found you can press ctrl+c to stop the search, or it will take a long time \n"
