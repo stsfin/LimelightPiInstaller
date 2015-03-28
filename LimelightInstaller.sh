@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir limelight
+mkdir ~/limelight
 
-cd limelight
+cd ~/limelight
 
 read -p "Press anykey to start Java8 install, input sudo credentials when asked `echo $'\n> '`" -n1 -s
 
@@ -45,13 +45,13 @@ rm limelight1080p60fps.sh
 
 
 echo "#!/bin/bash" >> limelight720p60fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
+echo "cd ~/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
 
 echo "#!/bin/bash" >> limelight1080p30fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
+echo "cd ~/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
 
 echo "#!/bin/bash" >> limelight1080p60fps.sh
-echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
+echo "cd ~/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
 chmod +x limelight720p60fps.sh
 chmod +x limelight1080p30fps.sh
