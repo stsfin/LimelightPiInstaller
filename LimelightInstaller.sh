@@ -24,7 +24,7 @@ read -p "Input ip-address given above (if no IP is shown, press CTRL+C and check
 
 java -jar limelight.jar pair $ip
 
-read -p "Press any key to continue after you have given the passcode to the Host PC... `echo $'\n> '`" -n1 -s
+read -p "Press any key to continue after you have given the passcode to the Host PC... (if pairing failed press CTRL+C and restart the installer) `echo $'\n> '`" -n1 -s
 
 read -p "Please ensure that your gamepad is connected to the PI for device selection (number only!), press any key to continue... `echo $'\n> '`" -n1 -s
 
