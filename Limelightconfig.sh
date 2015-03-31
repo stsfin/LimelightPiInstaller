@@ -14,15 +14,12 @@ read -p "Press any key to continue after you have given the passcode to the Host
 
 read -p "Please ensure that your gamepad is connected to the PI for device selection, press any key to continue... `echo $'\n> '`" -n1 -s
 
-clear
-
-lsinput|grep -e dev.input.event -e name
+clear && lsinput|grep -e dev.input.event -e name
 
 echo -e "\nInput device event ID-number that corresponds with your gamepad from above for keymapping \n"
 read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
-
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
