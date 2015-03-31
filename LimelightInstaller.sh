@@ -6,7 +6,7 @@ cd ~/limelight
 
 read -p "Press anykey to start Java8 install, input sudo credentials when asked `echo $'\n> '`" -n1 -s
 
-sudo apt-get update && sudo apt-get --yes install oracle-java8-jdk && sudo apt-get --yes install input-utils
+sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
 wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/libopus.so
 
