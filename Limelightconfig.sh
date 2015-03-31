@@ -23,7 +23,6 @@ java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
-
 echo "#!/bin/bash" > limelight720p60fps.sh
 echo "cd ~/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
 
