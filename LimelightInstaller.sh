@@ -1,4 +1,8 @@
 #!/bin/bash
+function downloadFile {
+	releases=`curl -s -L https://github.com/irtimmer/moonlight-embedded/releases/latest`
+	echo "$releases" | egrep -o "/irtimmer/moonlight-embedded/releases/download/v([0-9]\.*)+/$1" | wget --base=http://github.com/ -i - -O "$1"
+}
 
 mkdir ~/limelight
 
@@ -8,9 +12,8 @@ read -p "Press anykey to start Java8 install, input sudo credentials when asked 
 
 sudo apt-get update && sudo apt-get -y install oracle-java8-jdk && sudo apt-get -y install input-utils
 
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/libopus.so
-
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
+downloadFile libopus.so
+downloadFile limelight.jar
 
 clear
 
